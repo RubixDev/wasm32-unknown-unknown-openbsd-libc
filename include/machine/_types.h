@@ -22,6 +22,7 @@ typedef unsigned long __paddr_t;
 typedef unsigned long __vsize_t;
 typedef unsigned long __psize_t;
 
+/* Standard system types */
 typedef unsigned long __size_t;
 typedef long __ssize_t;
 
@@ -30,3 +31,8 @@ typedef double __double_t;
 
 struct __va_list_tag;
 typedef struct __va_list_tag *__va_list;
+
+/* Wide character support types */
+typedef int __rune_t;
+typedef void * __wctrans_t;
+typedef void * __wctype_t;
