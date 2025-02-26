@@ -4,9 +4,9 @@ edition = "2021"
 keywords = ["libc"]
 license = "BSD-3-Clause AND ISC AND MIT"
 links = "wasm32-unknown-unknown-openbsd-libc"
-name = "wasm32-unknown-unknown-openbsd-libc"
-repository = "https://github.com/trevyn/wasm32-unknown-unknown-openbsd-libc"
-version = "0.2.0"
+name = "wasm32-unknown-unknown-openbsd-libc-wctypes-fix"
+repository = "https://github.com/RubixDev/wasm32-unknown-unknown-openbsd-libc"
+version = "0.2.1"
 
 [build-dependencies]
 cc = "1"
