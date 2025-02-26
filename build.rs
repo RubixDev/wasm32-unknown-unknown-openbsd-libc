@@ -1,7 +1,7 @@
 use std::env;
 
 fn main() {
-    if !env::var("TARGET").map_or(false, |t| t.starts_with("wasm")) {
+    if !env::var("TARGET").is_ok_and(|t| t.starts_with("wasm")) {
         return;
     }
 
@@ -117,7 +117,7 @@ fn main() {
         .compile("wasm32-unknown-unknown-openbsd-libc");
 
     println!(
-        "cargo:include={}/include",
+        "cargo::metadata=include={}/include",
         env::var("CARGO_MANIFEST_DIR").unwrap()
     );
 }
